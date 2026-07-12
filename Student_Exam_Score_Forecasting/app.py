@@ -62,7 +62,7 @@ st.markdown("""
 # Define Helper Function to load the ML Pipeline
 @st.cache_resource
 def load_pipeline():
-    model_path = 'student_score_pipeline.pkl'
+    model_path = 'model\student_score_pipeline.pkl'
     if os.path.exists(model_path):
         return joblib.load(model_path)
     else:
